@@ -1,3 +1,5 @@
+#tipos primitivos
+
 ## int / 7, -4, 0, 9875
 ## float / 4.5, 0.0.76, -15.223. 7.0
 ## bool / True False
