@@ -4,4 +4,4 @@ if vel < 0:
 elif vel <= 80:
     print('O carro estava dentro da velocidade permitida.')
 else:
-    print(f'O carro ultrapassou o limite de velocidade de 80km e receberá multa.\nVelocidade que o carro passou {vel}km\nValor da multa a ser aplicada ao veiculo : R${(vel - 80) * 7}')
+    print(f'O carro ultrapassou o limite de velocidade de 80km e receberá multa.\nVelocidade que o carro passou {vel}km\nValor da multa a ser aplicada ao veiculo : R${(vel - 80) * 7}!')
