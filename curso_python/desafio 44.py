@@ -20,4 +20,9 @@ elif metodo == '2':
 elif metodo == '3':
     print(f'O valor a ser pago no cartão divido em 2x é : R${valor_prod} em 2x de R${valor_prod / 2} ')
 elif metodo == '4':
-    print(f'O valor a ser pago no cartão divido em 3x ou mais é : R${valor_prod + (valor_prod / 100 * 20)}')
+    parcela = (int(input('Quantas parcelas ? ')))
+    print(f'O valor a ser pago no cartão divido em 3x ou mais é : R${valor_prod + (valor_prod / 100 * 20)} em {parcela}x de {(valor_prod + (valor_prod / 100 * 20)) / parcela } ')
+else:
+    total = 0
+    print('Opção inválida de pagamento, tente novamente.')
+    
