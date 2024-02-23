@@ -10,4 +10,4 @@ for c in range(1, 8):
     else:
         total_menor += 1
 print(f'Ao todo tivemos {total_maior} pessoas maiores de idade.')
-print(f'Ao todo tivemos {total_menor} pessoas menores de idade.')
+print(f'Ao todo tivemos {total_menor} pessoas menores de idade.') 

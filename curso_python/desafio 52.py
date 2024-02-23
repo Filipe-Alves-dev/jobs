@@ -1,9 +1,12 @@
 n = int(input('Digite um número inteiro para saber e ele é primo ou não :'))
-if n > 1:
-    for c in range(2, n):
-        if n % c == 0:
-            print(f'{n} não é primo ')
-            break
-        else:
-            print(f'{n} é primo ')
-            break
+tot = 0
+for c in range(1, n + 1):
+    if n % c == 0:
+        tot += 1
+print(f'O número {n} foi divisivel {tot} vezes.')
+if tot == 2:
+    print(f'O número {n} é primo!')
+else:
+    print(f'O número {n} digitado não é primo!')
+
+       

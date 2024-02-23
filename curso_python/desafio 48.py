@@ -8,5 +8,5 @@ for c in range(1 , 501):
 print(f'a soma de todos os {vzs} valores somados é igual a {s}', end=' ')
 
 
-    
+     
         
