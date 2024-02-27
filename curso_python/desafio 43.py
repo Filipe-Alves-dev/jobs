@@ -17,4 +17,4 @@ elif imc >= 30 and imc <= 39.9:
 elif imc >= 40:
     print('Você se encontra no estado de obesidade morbida vá a um médico nutricionista urgentemente para avaliar seu caso.')
     
-    
+    QWSDF5GVHBNJMK,L./

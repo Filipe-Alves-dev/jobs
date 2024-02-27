@@ -4,7 +4,7 @@ print('\033[1;33m-=-\033[m' * 20 )
 print(emojize('Seja Bem Vindo ao sistema de calculo de Produtos! :programador:', language='pt'))
 print('\033[1;33m-=-\033[m' * 20 ) 
 sleep(1)
-valor_prod = float(input('Digite o valor do produto : '))
+valor_prod = float(input('Digite o valor do produto : R$'))
 sleep(2)
 metodo = str(input("""Digite o número do metodo de pagamento.\n
 1 - À vista/Cheque / 10% desconto\n
