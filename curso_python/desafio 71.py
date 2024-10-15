@@ -24,3 +24,4 @@ TOTAL DE {math.floor(vinte):.0f} CÉDULAS DE R$20\n
 TOTAL DE {math.floor(dez):.0f} CÉDULAS DE R$10\n
 TOTAL DE {um:.0f} CÉDULAS DE R$1\033[m''')
 print('\033[1;33m-=-\033[m' * 20)
+ 

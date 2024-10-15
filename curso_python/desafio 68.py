@@ -4,7 +4,7 @@ print('VAMOS JOGAR PAR OU IMPAR')
 print('\033[1;33m-=-\033[m' * 20)
 eu = soma = cont = 0
 while True:
-    computador = randint(0,10)
+    computador = randint(0, 10)
     eu = int(input('Diga um valor : '))
     result = str(input('\nPar ou Ímpar? [P/I] : ')).upper().strip()
     soma = eu + computador

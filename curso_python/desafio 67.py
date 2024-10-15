@@ -1,17 +1,10 @@
 n = 0
 while True:
     n = int(input('Quer ver a tabuada de qual valor? '))
-    print (f'''============================================\n{n} x 1 = {n * 1}\n
-{n} x 1 = {n * 1}\n
-{n} x 2 = {n * 2}\n
-{n} x 3 = {n * 3}\n
-{n} x 4 = {n * 4}\n
-{n} x 5 = {n * 5}\n
-{n} x 6 = {n * 6}\n
-{n} x 7 = {n * 7}\n
-{n} x 8 = {n * 8}\n
-{n} x 9 = {n * 9}\n
-{n} x 10 = {n * 10}\n============================================''')
+    print (f'\033[1;33m-\033[m'* 30)
+    for c in range (1,11):
+      print(f'\033[1;33m{n} x {c} = {n*c}\033[m')      
+    print (f'\033[1;33m-\033[m'* 30)
     if n < 0:
         break
 print('PROGRAMA TABUADA ENCERRADO. Volte sempre!')
