@@ -1,9 +1,9 @@
 from random import randint
-menor = 101
+menor = 11
 maior = 0
 print('Os valores sorteados foram : ',end='')
 for c in range(0,5):
-    c = randint(0,100)
+    c = randint(1,10)
     tupla = (c)
     print(tupla,end=' ')
     if tupla > maior:
