@@ -13,5 +13,5 @@ for f in range(0,5):
                 print(f'Valor inserido na posição {pos} da lista.')
                 break
             pos += 1
-print('=' * 60)
+print('\033[1;33m=\033[m' * 60)
 print(f'Os valores digitados foram {lista}')
