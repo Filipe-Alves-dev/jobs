@@ -1,5 +1,4 @@
 lista = []
-cont = 0
 for f in range(0,5):
     num = int(input('Digite um número para adicionar a lista: '))
     if f == 0 or num > lista[-1]:
