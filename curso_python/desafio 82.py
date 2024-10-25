@@ -1,10 +1,11 @@
-escolha = 'S'
 list_num = list_pares = list_impar = []
 print('\033[1;33m=\033[m' * 60)
-while escolha == 'S':
+while True:
     num = int(input('Digite um número : '))
     list_num.append(num)
     escolha = str(input('Quer continuar? [S/N] ')).upper().strip()
+    if 'N' in escolha:
+        break
 print('\033[1;33m=\033[m' * 60)
 print('A lista dos números digitados é : ',* list_num)
 print('Os números pares da lista são : ', end=' ')

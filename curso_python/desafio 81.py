@@ -1,10 +1,12 @@
 lista = []
 escolha = 'S'
 print('\033[1;33m=\033[m' * 60)
-while escolha == 'S':
+while True:
     valor = int(input('Digite um valor: '))
     lista.append(valor)
     escolha = str(input('Quer continuar? [S/N]')).upper().strip()
+    if 'N' in escolha:
+        break
 print('\033[1;33m=\033[m' * 60)
 print(f'Foram digitados {len(lista)} números.\n')
 lista.sort()
