@@ -24,4 +24,6 @@ print('[  {}  ] [  {}  ] [  {}  ]'.format( lista_1[0] ,  lista_1[1], lista_1[2])
 print('[  {}  ] [  {}  ] [  {}  ]'.format( lista_2[0] ,  lista_2[1], lista_2[2]))
 print('[  {}  ] [  {}  ] [  {}  ]'.format( lista_3[0] ,  lista_3[1], lista_3[2]))
 
-print(f'A soma dos valores pares é {soma_pares}')
+print(f'A soma dos valores pares é {soma_pares}.')
+print(f'A soma dos valores da terceira coluna é {lista_1[2] + lista_2 [2] + lista_3[2]}.')
+print(f'O maior valor da segunda linha é {max(lista_2)}.')
