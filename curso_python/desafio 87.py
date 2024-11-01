@@ -1,7 +1,6 @@
 lista_1 = []
 lista_2 = []
 lista_3 = []
-total = [] 
 soma_pares = 0
 matrix = matrix2 = matrix3 = []
 for m1 in range(0,3):
@@ -23,7 +22,7 @@ print('\033[1;33m=\033[m' * 60)
 print('[  {}  ] [  {}  ] [  {}  ]'.format( lista_1[0] ,  lista_1[1], lista_1[2]))
 print('[  {}  ] [  {}  ] [  {}  ]'.format( lista_2[0] ,  lista_2[1], lista_2[2]))
 print('[  {}  ] [  {}  ] [  {}  ]'.format( lista_3[0] ,  lista_3[1], lista_3[2]))
-
+print('\033[1;33m=\033[m' * 60)
 print(f'A soma dos valores pares é {soma_pares}.')
 print(f'A soma dos valores da terceira coluna é {lista_1[2] + lista_2 [2] + lista_3[2]}.')
 print(f'O maior valor da segunda linha é {max(lista_2)}.')

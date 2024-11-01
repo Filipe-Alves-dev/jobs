@@ -1,5 +1,5 @@
 lista_num = [[],[]]
-for v in range(1,7):
+for v in range(1,8):
     while True:
         num = int(input(f'Digite o {v}º valor : '))
         if num in lista_num[0] or num in lista_num[1]:

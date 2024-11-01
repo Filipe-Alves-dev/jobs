@@ -12,3 +12,4 @@ if salario / 100 * 30 >= parcela_casa:
     print(emojize(f'Para financiar este imóvel no valor de R${casa} em {ano} ano(s) o valor da prestação é de {parcela_casa:.2f}.\nMeus parabéns! Você esta apto a financiar seu imóvel!!! :marca_de_seleção_branca:' , language='pt'))
 else:
     print(emojize(f'Infelizmente o valor da sua renda não cumpre os requisitos para o financiamento desse imóvel, para financiar uma casa de R${casa} em {ano} ano(s) a prestação será de R${parcela_casa:.2f}\nImpréstimo NEGADO. :xis:', language='pt'))
+
