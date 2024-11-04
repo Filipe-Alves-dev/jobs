@@ -22,12 +22,12 @@
 # print(brasil[1]['Sigla'])
 # print(brasil[0]['uf'])
 
-# estado = dict()
-# brasil = list()
-# for c in range(3):
-#     estado['uf'] = str(input('Unidade federativa: '))
-#     estado['sigla'] = str(input('Sigla do Estado: '))
-#     brasil.append(estado.copy())
-# for e in brasil:
-#     for v in e.items():
-#         print(v, end=' ')
+estado = dict()
+brasil = list()
+for c in range(3):
+    estado['uf'] = str(input('Unidade federativa: '))
+    estado['sigla'] = str(input('Sigla do Estado: '))
+    brasil.append(estado.copy())
+for e in brasil:
+    for v in e.items():
+        print(v, end=' ')
