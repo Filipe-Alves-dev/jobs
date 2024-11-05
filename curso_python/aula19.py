@@ -13,21 +13,21 @@
 # for k, v in pessoas.items():
 #     print(f'{k} = {v}')
     
-# brasil = []
-# estado1 = {'uf':'Rio de Janeiro', 'Sigla': 'RJ'}
-# estado2 = {'uf':'São Paulo', 'Sigla': 'SP'}
-# brasil.append(estado1)
-# brasil.append(estado2)
+brasil = []
+estado1 = {'uf':'Rio de Janeiro', 'Sigla': 'RJ'}
+estado2 = {'uf':'São Paulo', 'Sigla': 'SP'}
+brasil.append(estado1)
+brasil.append(estado2)
 
-# print(brasil[1]['Sigla'])
-# print(brasil[0]['uf'])
+print(brasil[1]['Sigla'])
+print(brasil[0]['uf'])
 
-estado = dict()
-brasil = list()
-for c in range(3):
-    estado['uf'] = str(input('Unidade federativa: '))
-    estado['sigla'] = str(input('Sigla do Estado: '))
-    brasil.append(estado.copy())
-for e in brasil:
-    for v in e.items():
-        print(v, end=' ')
+# estado = dict()
+# brasil = list()
+# for c in range(3):
+#     estado['uf'] = str(input('Unidade federativa: '))
+#     estado['sigla'] = str(input('Sigla do Estado: '))
+#     brasil.append(estado.copy())
+# for e in brasil:
+#     for v in e.items():
+#         print(v, end=' ')
