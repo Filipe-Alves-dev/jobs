@@ -40,11 +40,16 @@ def mostrar_estatisticas():
     
     for cod, m in enumerate(estatistica):
         print(f"{cod:<4} {m['nome']:<15} {str(m['gols']):<10} {m['total']:>17}")
+    print('\033[1;33m-\033[m'* 60)
     
+def mostrar_dados_ind():
+    selecionar =  int(input('Mostrar dados de qual jogador? '))
+    for s in estatistica:
+        print(f'Levantamento do jogador {s[0][0]}')
     
 def main():
     adicionar_jogadores()
     mostrar_estatisticas()
-
+    mostrar_dados_ind()
 if __name__ == "__main__":
     main()

@@ -19,6 +19,6 @@ else:
         dados["aposentadoria"] = (35 - (ano_atual - dados["contratação"])) + dados["idade"]
     print('\033[1;33m-\033[m'* 40)     
     for k, v in dados.items():
-        print(f'{k} tem o valor : {v}')
+        print(f'- {k} tem o valor : {v}')
     print('\033[1;33m-\033[m'* 40)
     

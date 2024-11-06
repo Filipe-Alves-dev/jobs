@@ -17,4 +17,4 @@ print(f'\033[1;33m-\033[m' * 30)
 ranking = sorted(jogadores.items(), key=itemgetter(1), reverse=True)
 for i,v in enumerate(ranking):
     print(f'{i+1}° lugar: {v[0]} com {v[1]}')
-    sleep(1)
+    sleep(1) 

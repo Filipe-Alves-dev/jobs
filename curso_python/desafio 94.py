@@ -9,10 +9,17 @@ def cadastrar_pessoas():
     while True:
         print('\033[1;33m-\033[m'* 40)
         cadastro_pessoas["nome"] = str(input('Nome: '))
-        cadastro_pessoas["sexo"] = str(input('Sexo: [M/F] ')).upper()
+        
+        while True:
+            cadastro_pessoas["sexo"] = str(input('Sexo: [M/F] ')).upper()
+            if cadastro_pessoas['sexo'] in ['M','F']:
+                break
+            print('Erro! Por favor, digite apenas M ou F.')
+            
         cadastro_pessoas["idade"] = int(input('Idade: '))
         pessoas.append(cadastro_pessoas.copy())
         idades.append(cadastro_pessoas['idade'])
+        
         '''Adiciona os nomes das mulheres a lista.'''
         if cadastro_pessoas["sexo"] == 'F':
             mulheres.append(cadastro_pessoas["nome"]) 
@@ -20,9 +27,11 @@ def cadastrar_pessoas():
         print('\033[1;33m-\033[m'* 40)
         
         while True:
+            
             continuar = str(input('Quer continuar? [S/N] ')).upper()
             if continuar in ['S','N']:
                 break 
+            print('ERRO! Reponda apenas S ou N.')
             
         if continuar == 'N':
             break

@@ -6,7 +6,7 @@ if nome_media["Média"] >= 6:
 else:
     nome_media["Situacão"] = 'Reprovado'
 for k, v in nome_media.items():
-    print(f'{k} é igual a {v}')
+    print(f'- {k} é igual a {v}')
     
     
     
