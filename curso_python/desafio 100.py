@@ -3,14 +3,15 @@ from time import sleep
 
 list_num = []
 
+
 def sorteio():
     print('Sorteando 5 valores da lista : ', end=' ')
     for c in range(1,6):   
         numeros = randint(1,9)
         sleep(1)
-        print(numeros, end= ' ')
+        print(numeros, end= ' ', flush= True)
         list_num.append(numeros)    
-
+ 
 
 def soma_pares():
     soma_par = 0
