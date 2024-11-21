@@ -9,6 +9,8 @@ def jogador_gol(n, g):
     """
     if n == '':
         n = '<desconhecido>'
+    if g.isalpha() or g == '':
+        g = 0
     print(f'O jogador {n} fez {g} gol(s) no campeonato')
     
     

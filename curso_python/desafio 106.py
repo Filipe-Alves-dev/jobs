@@ -1,71 +1,40 @@
 from time import sleep
 
-
-def background_verde(frase):
-    til = '~' * len(frase)
-    print(f'\033[1;37;42m{til:<118}{frase:<118}{til}\033[m')
-    return frase
-
-    
-def background_azul(frase):
-    til = '~' * len(frase)
-    print(f'\033[1;37;46m{til:<118}{frase:<118}{til:<118}\033[m')
-    return frase
-    
-    
-def background_branco(frase):
-    print(f'\033[1;37;41m{frase:<118}')
-    return frase
+# Cores para o fundo
+c = ('\033[m',        # 0 - sem cores
+     '\033[0;30;41m', # 1 - vermelho
+     '\033[0;30;42m', # 2 - verde
+     '\033[0;30;43m', # 3 - amarelo
+     '\033[0;30;44m', # 4 - azul
+     '\033[0;30;45m', # 5 - roxo
+     '\033[7;30m'     # 6 - branco
+    )
 
 
-def help():
-    while True:
-        sleep(2)
-        background_verde(' SISTEMA DE AJUDA PyHELP ')
-        ajuda = str(input('Função ou biblioteca > '))
-        if ajuda == 'len':
-            background_azul(" Acessando o manual do comando  'len' ")
-            sleep(2)
-            background_branco("""Help on built-in function len in module builtins:
-
-len(obj, /)
-Return the number of items in a container.
-                                    """)
-        elif ajuda == 'print':
-            background_azul(" Acessando o manual do comando 'print' ")
-            sleep(2)
-            background_branco("""Help on built-in function print in module builtins:
-
-print(*args, sep=' ', end='\n', file=None, flush=False)
-    Prints the values to a stream, or to sys.stdout by default.
-                                    
-    sep
-    string inserted between values, default a space.
-    end
-    string appended after the last value, default a newline.
-    file
-    a file-like object (stream); defaults to the current sys.stdout.
-    flush
-    whether to forcibly flush the stream.
-    """)
-        elif ajuda == 'input':
-            background_azul(" Acessando o manual do comando 'input' ")
-            sleep(2)
-            background_branco("""Help on built-in function input in module builtins:
-
-input(prompt='', /)
-    Read a string from standard input.  The trailing newline is stripped.
-                                    
-    The prompt string, if given, is printed to standard output without a
-    trailing newline before reading input.
-                                    
-    If the user hits EOF (*nix: Ctrl-D, Windows: Ctrl-Z+Return), raise EOFError.
-    On *nix systems, readline is used if available.
-    """)   
-        if ajuda == 'fim':
-            break
-    return help
+def ajuda(com):
+    título(f'Acessando o manual do \'{com}\'', 4)
+    print(c[6], end='')  # Cor do fundo branco
+    help(com)
+    print(c[0], end='')  # Restaura para a cor padrão
+    sleep(2)
 
 
-help()
+def título(msg, cor=0):
+    tam = len(msg) + 4
+    print(c[cor], end='')  # Cor do fundo conforme especificado
+    print('~' * tam)
+    print(f' {msg} ')
+    print('~' * tam)
+    print(c[0], end='')  # Restaura a cor para o padrão
 
+
+# Programa Principal
+comando = ''
+while True:
+    título('SISTEMA DE AJUDA PyHELP', 2)  # Exibe o título em verde
+    comando = str(input("Função ou Biblioteca > "))  # Recebe o comando do usuário
+    if comando.upper() == 'FIM':  # Se o usuário digitar 'FIM', encerra o programa
+        break
+    else:
+        ajuda(comando)  # Chama a função de ajuda
+título('ATÉ LOGO!', 1)  # Exibe 'ATÉ LOGO!' com fundo vermelho

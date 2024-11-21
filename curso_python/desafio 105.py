@@ -2,8 +2,8 @@
 def notas(* n, sit=False):
     """
     -> Função para analisar notas e situações de vários alunos.
-    :parametro n: um
-    :parametro sit: (bool, optional): indicando se deve ou não adicionar uma situação 
+    :parametro n: uma ou mais notas e situações de vários alunos.
+    :parametro sit: (bool, optional): indicando se deve ou não adicionar uma situação. 
     :Returns: dicionário com várias informações sobre notas dos alunos e situação.
         
     """
@@ -24,8 +24,10 @@ def notas(* n, sit=False):
         else:
             dict_notas['situação'] = 'RUIM'
     return dict_notas
-    
+
+
+# Programa Principal    
 print('-' * 50)
-resp = notas(3.5,10,6.5,2,1,7)
+resp = notas(3.5,10,6.5,2,1,7, sit= True)
 print(resp)
 help(notas)
